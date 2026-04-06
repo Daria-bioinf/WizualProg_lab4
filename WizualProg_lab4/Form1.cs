@@ -20,11 +20,47 @@ namespace WizualProg_lab4
         private void butn_load_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Bitmap Fiels (*.bmp)|*.bmp";
+            ofd.Filter = "Bitmap Files (*.bmp)|*.bmp";
 
             if (ofd.ShowDialog() == DialogResult.OK) {
                 pictureBox1.Image = new Bitmap(ofd.FileName);
             }
+        }
+
+        private void butn_rotate_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image == null) return;
+            
+            Bitmap bmp = new Bitmap(pictureBox1.Image);
+            if (radioButton90.Checked)
+            {
+                bmp.RotateFlip(RotateFlipType.Rotate90FlipNone);
+            }
+            else if (radioButton180.Checked)
+            {
+                bmp.RotateFlip(RotateFlipType.Rotate180FlipNone);
+            }
+            else if (radioButton270.Checked)
+            {
+                bmp.RotateFlip(RotateFlipType.Rotate270FlipNone);
+            }
+            pictureBox1.Image = bmp;
+
+        }
+
+        private void radioButton90_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton180_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton270_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

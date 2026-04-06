@@ -98,5 +98,27 @@ namespace WizualProg_lab4
 
             pictureBox1.Image = bmp;
         }
+
+        private void buttonGreen_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image == null) return;
+
+            Bitmap bmp = new Bitmap(pictureBox1.Image);
+
+            for (int i = 0; i < bmp.Width; i++)
+            {
+                for (int j = 0; j < bmp.Height; j++)
+                {
+                    Color pixel = bmp.GetPixel(i, j);
+
+                    if (!(pixel.G > pixel.R && pixel.G > pixel.B))
+                    {
+                        bmp.SetPixel(i, j, Color.Black);
+                    }
+                }
+            }
+
+            pictureBox1.Image = bmp; 
+        }
     }
 }

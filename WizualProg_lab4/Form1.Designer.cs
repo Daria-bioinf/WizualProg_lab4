@@ -32,7 +32,7 @@
             this.butn_rotate = new System.Windows.Forms.Button();
             this.buttonInvert = new System.Windows.Forms.Button();
             this.buttonUpside = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonGreen = new System.Windows.Forms.Button();
             this.butn_load = new System.Windows.Forms.Button();
             this.radioButton90 = new System.Windows.Forms.RadioButton();
             this.radioButton180 = new System.Windows.Forms.RadioButton();
@@ -79,14 +79,15 @@
             this.buttonUpside.UseVisualStyleBackColor = true;
             this.buttonUpside.Click += new System.EventHandler(this.buttonUpside_Click);
             // 
-            // button4
+            // buttonGreen
             // 
-            this.button4.Location = new System.Drawing.Point(26, 318);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(197, 44);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonGreen.Location = new System.Drawing.Point(26, 318);
+            this.buttonGreen.Name = "buttonGreen";
+            this.buttonGreen.Size = new System.Drawing.Size(197, 44);
+            this.buttonGreen.TabIndex = 4;
+            this.buttonGreen.Text = "OnlyGreen";
+            this.buttonGreen.UseVisualStyleBackColor = true;
+            this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
             // 
             // butn_load
             // 
@@ -140,7 +141,7 @@
             this.Controls.Add(this.radioButton180);
             this.Controls.Add(this.radioButton90);
             this.Controls.Add(this.butn_load);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonGreen);
             this.Controls.Add(this.buttonUpside);
             this.Controls.Add(this.buttonInvert);
             this.Controls.Add(this.butn_rotate);
@@ -159,7 +160,7 @@
         private System.Windows.Forms.Button butn_rotate;
         private System.Windows.Forms.Button buttonInvert;
         private System.Windows.Forms.Button buttonUpside;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonGreen;
         private System.Windows.Forms.Button butn_load;
         private System.Windows.Forms.RadioButton radioButton90;
         private System.Windows.Forms.RadioButton radioButton180;

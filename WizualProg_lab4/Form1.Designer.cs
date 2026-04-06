@@ -51,42 +51,46 @@
             // 
             // butn_rotate
             // 
+            this.butn_rotate.BackColor = System.Drawing.Color.LightCoral;
             this.butn_rotate.Location = new System.Drawing.Point(26, 168);
             this.butn_rotate.Name = "butn_rotate";
             this.butn_rotate.Size = new System.Drawing.Size(197, 44);
             this.butn_rotate.TabIndex = 1;
             this.butn_rotate.Text = "Rotate";
-            this.butn_rotate.UseVisualStyleBackColor = true;
+            this.butn_rotate.UseVisualStyleBackColor = false;
             this.butn_rotate.Click += new System.EventHandler(this.butn_rotate_Click);
             // 
             // buttonInvert
             // 
+            this.buttonInvert.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonInvert.Location = new System.Drawing.Point(26, 218);
             this.buttonInvert.Name = "buttonInvert";
             this.buttonInvert.Size = new System.Drawing.Size(197, 44);
             this.buttonInvert.TabIndex = 2;
             this.buttonInvert.Text = "Invert Colors";
-            this.buttonInvert.UseVisualStyleBackColor = true;
+            this.buttonInvert.UseVisualStyleBackColor = false;
             this.buttonInvert.Click += new System.EventHandler(this.buttonInvert_Click);
             // 
             // buttonUpside
             // 
+            this.buttonUpside.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.buttonUpside.Location = new System.Drawing.Point(26, 268);
             this.buttonUpside.Name = "buttonUpside";
             this.buttonUpside.Size = new System.Drawing.Size(197, 44);
             this.buttonUpside.TabIndex = 3;
             this.buttonUpside.Text = "Upside Down";
-            this.buttonUpside.UseVisualStyleBackColor = true;
+            this.buttonUpside.UseVisualStyleBackColor = false;
             this.buttonUpside.Click += new System.EventHandler(this.buttonUpside_Click);
             // 
             // buttonGreen
             // 
+            this.buttonGreen.BackColor = System.Drawing.Color.LightGreen;
             this.buttonGreen.Location = new System.Drawing.Point(26, 318);
             this.buttonGreen.Name = "buttonGreen";
             this.buttonGreen.Size = new System.Drawing.Size(197, 44);
             this.buttonGreen.TabIndex = 4;
             this.buttonGreen.Text = "OnlyGreen";
-            this.buttonGreen.UseVisualStyleBackColor = true;
+            this.buttonGreen.UseVisualStyleBackColor = false;
             this.buttonGreen.Click += new System.EventHandler(this.buttonGreen_Click);
             // 
             // butn_load
@@ -102,31 +106,39 @@
             // radioButton90
             // 
             this.radioButton90.AutoSize = true;
+            this.radioButton90.BackColor = System.Drawing.SystemColors.Control;
+            this.radioButton90.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton90.ForeColor = System.Drawing.Color.IndianRed;
             this.radioButton90.Location = new System.Drawing.Point(26, 38);
             this.radioButton90.Name = "radioButton90";
-            this.radioButton90.Size = new System.Drawing.Size(46, 20);
+            this.radioButton90.Size = new System.Drawing.Size(45, 20);
             this.radioButton90.TabIndex = 6;
             this.radioButton90.Text = "90°";
-            this.radioButton90.UseVisualStyleBackColor = true;
+            this.radioButton90.UseVisualStyleBackColor = false;
             this.radioButton90.CheckedChanged += new System.EventHandler(this.radioButton90_CheckedChanged);
             // 
             // radioButton180
             // 
             this.radioButton180.AutoSize = true;
+            this.radioButton180.BackColor = System.Drawing.SystemColors.Control;
+            this.radioButton180.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton180.ForeColor = System.Drawing.Color.IndianRed;
             this.radioButton180.Location = new System.Drawing.Point(26, 81);
             this.radioButton180.Name = "radioButton180";
-            this.radioButton180.Size = new System.Drawing.Size(53, 20);
+            this.radioButton180.Size = new System.Drawing.Size(52, 20);
             this.radioButton180.TabIndex = 7;
             this.radioButton180.Text = "180°";
-            this.radioButton180.UseVisualStyleBackColor = true;
+            this.radioButton180.UseVisualStyleBackColor = false;
             this.radioButton180.CheckedChanged += new System.EventHandler(this.radioButton180_CheckedChanged);
             // 
             // radioButton270
             // 
             this.radioButton270.AutoSize = true;
+            this.radioButton270.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.radioButton270.ForeColor = System.Drawing.Color.IndianRed;
             this.radioButton270.Location = new System.Drawing.Point(26, 124);
             this.radioButton270.Name = "radioButton270";
-            this.radioButton270.Size = new System.Drawing.Size(53, 20);
+            this.radioButton270.Size = new System.Drawing.Size(52, 20);
             this.radioButton270.TabIndex = 8;
             this.radioButton270.Text = "270°";
             this.radioButton270.UseVisualStyleBackColor = true;

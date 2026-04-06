@@ -22,7 +22,8 @@ namespace WizualProg_lab4
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Filter = "Bitmap Files (*.bmp)|*.bmp";
 
-            if (ofd.ShowDialog() == DialogResult.OK) {
+            if (ofd.ShowDialog() == DialogResult.OK)
+            {
                 pictureBox1.Image = new Bitmap(ofd.FileName);
             }
         }
@@ -30,7 +31,7 @@ namespace WizualProg_lab4
         private void butn_rotate_Click(object sender, EventArgs e)
         {
             if (pictureBox1.Image == null) return;
-            
+
             Bitmap bmp = new Bitmap(pictureBox1.Image);
             if (radioButton90.Checked)
             {
@@ -61,6 +62,41 @@ namespace WizualProg_lab4
         private void radioButton270_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonInvert_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image == null) return;
+
+            Bitmap bmp = new Bitmap(pictureBox1.Image);
+
+            for (int i = 0; i < bmp.Width; i++)
+            {
+                for (int j = 0; j < bmp.Height; j++)
+                {
+                    Color pixel = bmp.GetPixel(i, j);
+
+                    Color inverted = Color.FromArgb(
+                        255 - pixel.R,
+                        255 - pixel.G,
+                        255 - pixel.B
+                    );
+
+                    bmp.SetPixel(i, j, inverted); 
+                }
+            }
+
+            pictureBox1.Image = bmp;
+        }
+
+        private void buttonUpside_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Image == null) return;
+
+            Bitmap bmp = new Bitmap(pictureBox1.Image);
+            bmp.RotateFlip(RotateFlipType.RotateNoneFlipY);
+
+            pictureBox1.Image = bmp;
         }
     }
 }

@@ -30,8 +30,8 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.butn_rotate = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonInvert = new System.Windows.Forms.Button();
+            this.buttonUpside = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.butn_load = new System.Windows.Forms.Button();
             this.radioButton90 = new System.Windows.Forms.RadioButton();
@@ -59,23 +59,25 @@
             this.butn_rotate.UseVisualStyleBackColor = true;
             this.butn_rotate.Click += new System.EventHandler(this.butn_rotate_Click);
             // 
-            // button2
+            // buttonInvert
             // 
-            this.button2.Location = new System.Drawing.Point(26, 218);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 44);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonInvert.Location = new System.Drawing.Point(26, 218);
+            this.buttonInvert.Name = "buttonInvert";
+            this.buttonInvert.Size = new System.Drawing.Size(197, 44);
+            this.buttonInvert.TabIndex = 2;
+            this.buttonInvert.Text = "Invert Colors";
+            this.buttonInvert.UseVisualStyleBackColor = true;
+            this.buttonInvert.Click += new System.EventHandler(this.buttonInvert_Click);
             // 
-            // button3
+            // buttonUpside
             // 
-            this.button3.Location = new System.Drawing.Point(26, 268);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(197, 44);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.buttonUpside.Location = new System.Drawing.Point(26, 268);
+            this.buttonUpside.Name = "buttonUpside";
+            this.buttonUpside.Size = new System.Drawing.Size(197, 44);
+            this.buttonUpside.TabIndex = 3;
+            this.buttonUpside.Text = "Upside Down";
+            this.buttonUpside.UseVisualStyleBackColor = true;
+            this.buttonUpside.Click += new System.EventHandler(this.buttonUpside_Click);
             // 
             // button4
             // 
@@ -139,8 +141,8 @@
             this.Controls.Add(this.radioButton90);
             this.Controls.Add(this.butn_load);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonUpside);
+            this.Controls.Add(this.buttonInvert);
             this.Controls.Add(this.butn_rotate);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -155,8 +157,8 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button butn_rotate;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonInvert;
+        private System.Windows.Forms.Button buttonUpside;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button butn_load;
         private System.Windows.Forms.RadioButton radioButton90;
